@@ -14,7 +14,9 @@
 		<script src="https://static-158c3.kxcdn.com/js/widgets/handler.js" type="text/javascript"></script>
 		<script>
 		  function resizeIframe(obj) {
-		    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+			  	var height = obj.contentWindow.document.documentElement.scrollHeight;
+			  	height = height * 1.2;
+		    	obj.style.height = height + 'px';
 		  }
 		</script>
 	</head>
